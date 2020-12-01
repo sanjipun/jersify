@@ -10,7 +10,7 @@ function App() {
 			<StylesProvider injectFirst>
 				<Navbar />
 				<BrowserRouter>
-					<Route path='/' exact component={LandingPage} />
+					<Route path='/jersify' exact component={LandingPage} />
 				</BrowserRouter>
 			</StylesProvider>
 		</div>

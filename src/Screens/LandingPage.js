@@ -50,11 +50,10 @@ const H2 = styled.h2`
 	}
 	@media (max-width: 540px) {
 		font-size: 6vw;
-		margin-top: 690px;
 	}
 	@media (max-width: 368px) {
 		font-size: 6vw;
-		margin-top: 700px;
+		margin-top: 650px;
 	}
 `;
 const ParentButton = styled(Button)`
