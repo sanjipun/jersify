@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { StylesProvider } from '@material-ui/core';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+
+const { default: LandingPage } = require('./Screens/LandingPage');
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App' style={{ fontFamily: 'Rubik' }}>
+			<StylesProvider injectFirst>
+				<Navbar />
+				<BrowserRouter>
+					<Route path='/' exact component={LandingPage} />
+				</BrowserRouter>
+			</StylesProvider>
+		</div>
+	);
 }
 
 export default App;
