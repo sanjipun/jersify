@@ -25,9 +25,7 @@ const GridItem = styled(Grid)`
 display:flex;
 justify-content:center;	
 align-items:center;
-@media (max-width:960px){
-	align-items:flex-end;	
-}
+
 `;
 const H2 = styled.h2`
 	font-size: 3vw;
@@ -47,13 +45,16 @@ const H2 = styled.h2`
 	}
 	@media (max-width: 720px) {
 		font-size: 4vw;
+		text-align: center;
 	}
 	@media (max-width: 540px) {
 		font-size: 6vw;
+		text-align: center;
 	}
 	@media (max-width: 368px) {
 		font-size: 6vw;
 		margin-top: 650px;
+		text-align: center;
 	}
 `;
 const ParentButton = styled(Button)`
@@ -67,6 +68,14 @@ transition:all 0.5s ease-in-out;
 		background-color:#ffeb3b;
 		color:black;
 	}	
+	@media (max-width:540px) {
+		text-align: center;
+		margin-top:10px
+	}
+	@media (max-width: 368px) {
+		text-align: center;
+		margin-top:10px
+	}
 `;
 const IMG = styled(motion.img)`
 	max-height: 612px;
@@ -99,12 +108,28 @@ const H3 = styled.h3`
 	}
 	@media (max-width: 720px) {
 		font-size: 4vw;
+		text-align: center;
 	}
 	@media (max-width: 540px) {
 		font-size: 5vw;
+		text-align: center;
 	}
 	@media (max-width: 368px) {
 		font-size: 5vw;
+		text-align: center;
+	}
+`;
+const PBdiv = styled.div`
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	@media (max-width: 540px) {
+		display: block;
+		text-align: center;
+	}
+	@media (max-width: 368px) {
+		display: block;
+		text-align: center;
 	}
 `;
 
@@ -124,10 +149,10 @@ const LandingPage = ({ history }) => {
 				<GridItem item xs={8} sm={6} md={4} lg={3} style={{ display: 'block' }}>
 					<H2>Chelsea {selectedText} Kit 20/21</H2>
 					<H3>Price: Rs. 1500</H3>
-					<ParentButton onClick={(e) => history.push('/')} style={{ marginRight: 20 }}>
-						BUY NOW
-					</ParentButton>
-					<ParentButton>ADD TO CART</ParentButton>
+					<PBdiv>
+						<ParentButton onClick={(e) => history.push('/')}>BUY NOW</ParentButton>
+						<ParentButton>ADD TO CART</ParentButton>
+					</PBdiv>
 				</GridItem>
 				<GridItem item xs={12} sm={10} md={8} lg={5}>
 					<IMG src={selectedImg} alt={selectedText} />

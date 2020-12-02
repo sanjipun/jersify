@@ -1,5 +1,5 @@
 import { StylesProvider } from '@material-ui/core';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 
 const { default: LandingPage } = require('./Screens/LandingPage');
@@ -10,7 +10,9 @@ function App() {
 			<StylesProvider injectFirst>
 				<Navbar />
 				<BrowserRouter>
-					<Route path='/jersify' exact component={LandingPage} />
+					<Switch>
+						<Route path='/' exact component={LandingPage} />
+					</Switch>
 				</BrowserRouter>
 			</StylesProvider>
 		</div>
