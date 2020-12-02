@@ -77,6 +77,7 @@ const MenuIcon = styled.div`
 	@media (max-width: 960px) {
 		display: block;
 		justify-content: flex-end;
+		margin-right: 15vw;
 	}
 `;
 
