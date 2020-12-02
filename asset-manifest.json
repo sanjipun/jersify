@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.js": "/jersify/static/js/main.329deb26.chunk.js",
-    "main.js.map": "/jersify/static/js/main.329deb26.chunk.js.map",
+    "main.js": "/jersify/static/js/main.62a3ff7f.chunk.js",
+    "main.js.map": "/jersify/static/js/main.62a3ff7f.chunk.js.map",
     "runtime-main.js": "/jersify/static/js/runtime-main.c55dfdc0.js",
     "runtime-main.js.map": "/jersify/static/js/runtime-main.c55dfdc0.js.map",
-    "static/js/2.e305eb0c.chunk.js": "/jersify/static/js/2.e305eb0c.chunk.js",
-    "static/js/2.e305eb0c.chunk.js.map": "/jersify/static/js/2.e305eb0c.chunk.js.map",
+    "static/js/2.9136edc6.chunk.js": "/jersify/static/js/2.9136edc6.chunk.js",
+    "static/js/2.9136edc6.chunk.js.map": "/jersify/static/js/2.9136edc6.chunk.js.map",
     "index.html": "/jersify/index.html",
-    "static/js/2.e305eb0c.chunk.js.LICENSE.txt": "/jersify/static/js/2.e305eb0c.chunk.js.LICENSE.txt",
+    "static/js/2.9136edc6.chunk.js.LICENSE.txt": "/jersify/static/js/2.9136edc6.chunk.js.LICENSE.txt",
     "static/media/away.f9e17daf.png": "/jersify/static/media/away.f9e17daf.png",
+    "static/media/blue.a4cb2080.png": "/jersify/static/media/blue.a4cb2080.png",
+    "static/media/dotted.ec7c7a01.png": "/jersify/static/media/dotted.ec7c7a01.png",
     "static/media/gk.971178f5.png": "/jersify/static/media/gk.971178f5.png",
     "static/media/home.a6df44fc.png": "/jersify/static/media/home.a6df44fc.png",
+    "static/media/normal.44cfea5c.png": "/jersify/static/media/normal.44cfea5c.png",
+    "static/media/special.7e761b69.png": "/jersify/static/media/special.7e761b69.png",
+    "static/media/specialE.5c463e37.png": "/jersify/static/media/specialE.5c463e37.png",
     "static/media/third.7bd338de.png": "/jersify/static/media/third.7bd338de.png",
-    "static/media/training.62f4ba13.png": "/jersify/static/media/training.62f4ba13.png"
+    "static/media/training.62f4ba13.png": "/jersify/static/media/training.62f4ba13.png",
+    "static/media/white.d52bdfa3.png": "/jersify/static/media/white.d52bdfa3.png",
+    "static/media/whiteb.f618522f.png": "/jersify/static/media/whiteb.f618522f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c55dfdc0.js",
-    "static/js/2.e305eb0c.chunk.js",
-    "static/js/main.329deb26.chunk.js"
+    "static/js/2.9136edc6.chunk.js",
+    "static/js/main.62a3ff7f.chunk.js"
   ]
 }
