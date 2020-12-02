@@ -19,6 +19,7 @@ const StyledButtons = ({ children, variant, text, image, img, tag, onClick, acti
 	const [ pr, setPr ] = useState(false);
 
 	const handleClick = () => {
+		setPr(!pr);
 		if (text && image && onClick) {
 			text(tag);
 			image(img);

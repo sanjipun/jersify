@@ -2,12 +2,9 @@ import { Button, Grid } from '@material-ui/core';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import img1 from '../Assets/home.png';
 import StyledButtons from '../Components/StyledButton';
-import ChelseaKits from '../FileCollection/ChelseaKits';
-import Mugs from './Mugs';
-import Boots from './Boots';
-import Scarfs from './Scarfs';
+import img1 from '../Assets/white.png';
+import { ChelseaMugs } from '../FileCollection/ChelseaMugs';
 import { Link } from 'react-scroll';
 
 const DivWrapper = styled.div`
@@ -29,7 +26,6 @@ const GridItem = styled(Grid)`
 display:flex;
 justify-content:center;	
 align-items:center;
-
 `;
 const H2 = styled.h2`
 	font-size: 3vw;
@@ -137,9 +133,9 @@ const PBdiv = styled.div`
 	}
 `;
 
-const LandingPage = ({ history }) => {
+const Mugs = ({ history }) => {
 	const [ selectedImg, setSelectedImg ] = useState(img1);
-	const [ selectedText, setSelectedText ] = useState('Home');
+	const [ selectedText, setSelectedText ] = useState('White');
 	const [ active, setActive ] = useState('');
 	const text = (txt) => {
 		setSelectedText(txt);
@@ -148,12 +144,12 @@ const LandingPage = ({ history }) => {
 		setSelectedImg(img);
 	};
 	return (
-		<div>
-			<DivWrapper id='kits'>
+		<div id='mugs'>
+			<DivWrapper>
 				<GridContainer container>
 					<GridItem item xs={8} sm={6} md={4} lg={3} style={{ display: 'block' }}>
-						<H2>Chelsea {selectedText} Kit 20/21</H2>
-						<H3>Price: Rs. 1500</H3>
+						<H2>Chelsea {selectedText} Mug</H2>
+						<H3>Price: Rs. 600</H3>
 						<PBdiv>
 							<ParentButton onClick={(e) => history.push('/')}>BUY NOW</ParentButton>
 							<ParentButton>ADD TO CART</ParentButton>
@@ -162,23 +158,24 @@ const LandingPage = ({ history }) => {
 					<GridItem item xs={12} sm={10} md={8} lg={5}>
 						<IMG src={selectedImg} alt={selectedText} />
 					</GridItem>
+
 					<GridItem item xs={8} sm={6} md={4} lg={4} style={{ display: 'block' }}>
 						<div
 							className='kits'
 							style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
 						>
-							{ChelseaKits.map((kit, index) => {
+							{ChelseaMugs.map((mug, index) => {
 								return (
 									<StyledButtons
-										active={active === kit.tag ? true : false}
+										active={active === mug.color ? true : false}
 										onClick={(tag) => setActive(tag)}
 										image={image}
 										text={text}
-										img={kit.img}
-										tag={kit.tag}
+										img={mug.img}
+										tag={mug.color}
 										key={index}
 									>
-										{kit.tag}
+										{mug.color}
 									</StyledButtons>
 								);
 							})}
@@ -187,13 +184,26 @@ const LandingPage = ({ history }) => {
 							className='other-Items'
 							style={{ display: 'flex', marginTop: '10vh', justifyContent: 'center' }}
 						>
-							<ParentButton disabled style={{ color: 'white' }}>
-								<i className='fas fa-angle-up' />
+							<ParentButton>
+								<Link
+									activeClass='active'
+									to='kits'
+									spy={true}
+									smooth={true}
+									hashSpy={true}
+									offset={50}
+									duration={500}
+									delay={500}
+									isDynamic={true}
+									ignoreCancelEvents={false}
+								>
+									<i className='fas fa-angle-up' />
+								</Link>
 							</ParentButton>
 							<ParentButton>
 								<Link
 									activeClass='active'
-									to='mugs'
+									to='boots'
 									spy={true}
 									smooth={true}
 									hashSpy={true}
@@ -214,4 +224,4 @@ const LandingPage = ({ history }) => {
 	);
 };
 
-export default LandingPage;
+export default Mugs;

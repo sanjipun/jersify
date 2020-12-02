@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components';
 import ListContacts from '../FileCollection/ListContact';
 import Products from '../FileCollection/Products';
 import { slideInRight } from 'react-animations';
+import { Link } from 'react-scroll';
 
 const LogoDiv = styled.div`
 	display: flex;
@@ -126,7 +127,24 @@ const Navbar = () => {
 				<div>
 					<Ul>
 						{Products.map((product, index) => {
-							return <LiProducts key={index}>{product.name}</LiProducts>;
+							return (
+								<LiProducts key={index}>
+									<Link
+										activeClass='active'
+										to={product.link}
+										spy={true}
+										smooth={true}
+										hashSpy={true}
+										offset={50}
+										duration={500}
+										delay={500}
+										isDynamic={true}
+										ignoreCancelEvents={false}
+									>
+										{product.name}
+									</Link>
+								</LiProducts>
+							);
 						})}
 					</Ul>
 				</div>

@@ -15,6 +15,7 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "react-scroll": "^1.8.1",
     "react-waypoint": "^9.0.3",
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
@@ -23,9 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",   
+    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"     
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
