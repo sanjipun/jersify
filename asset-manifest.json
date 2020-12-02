@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/jersify/static/js/main.c917869e.chunk.js",
-    "main.js.map": "/jersify/static/js/main.c917869e.chunk.js.map",
+    "main.js": "/jersify/static/js/main.46d5b0de.chunk.js",
+    "main.js.map": "/jersify/static/js/main.46d5b0de.chunk.js.map",
     "runtime-main.js": "/jersify/static/js/runtime-main.c55dfdc0.js",
     "runtime-main.js.map": "/jersify/static/js/runtime-main.c55dfdc0.js.map",
-    "static/js/2.409c0be1.chunk.js": "/jersify/static/js/2.409c0be1.chunk.js",
-    "static/js/2.409c0be1.chunk.js.map": "/jersify/static/js/2.409c0be1.chunk.js.map",
+    "static/js/2.e305eb0c.chunk.js": "/jersify/static/js/2.e305eb0c.chunk.js",
+    "static/js/2.e305eb0c.chunk.js.map": "/jersify/static/js/2.e305eb0c.chunk.js.map",
     "index.html": "/jersify/index.html",
-    "static/js/2.409c0be1.chunk.js.LICENSE.txt": "/jersify/static/js/2.409c0be1.chunk.js.LICENSE.txt",
+    "static/js/2.e305eb0c.chunk.js.LICENSE.txt": "/jersify/static/js/2.e305eb0c.chunk.js.LICENSE.txt",
     "static/media/away.f9e17daf.png": "/jersify/static/media/away.f9e17daf.png",
     "static/media/gk.971178f5.png": "/jersify/static/media/gk.971178f5.png",
     "static/media/home.a6df44fc.png": "/jersify/static/media/home.a6df44fc.png",
@@ -16,7 +16,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c55dfdc0.js",
-    "static/js/2.409c0be1.chunk.js",
-    "static/js/main.c917869e.chunk.js"
+    "static/js/2.e305eb0c.chunk.js",
+    "static/js/main.46d5b0de.chunk.js"
   ]
 }
