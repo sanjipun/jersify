@@ -185,7 +185,7 @@ const LandingPage = ({ history }) => {
 						</div>
 						<div
 							className='other-Items'
-							style={{ display: 'flex', marginTop: '10vh', justifyContent: 'center' }}
+							style={{ display: 'flex', marginTop: 20, justifyContent: 'center' }}
 						>
 							<ParentButton disabled style={{ color: 'white' }}>
 								<i className='fas fa-angle-up' />

@@ -46,14 +46,16 @@ const H2 = styled.h2`
 	@media (max-width: 720px) {
 		font-size: 4vw;
 		text-align: center;
+		margin-top: 1900px;
 	}
 	@media (max-width: 540px) {
 		font-size: 6vw;
 		text-align: center;
+		margin-top: 2000px;
 	}
 	@media (max-width: 368px) {
 		font-size: 6vw;
-		margin-top: 650px;
+		margin-top: 2100px;
 		text-align: center;
 	}
 `;
@@ -182,7 +184,7 @@ const Boots = ({ history }) => {
 						</div>
 						<div
 							className='other-Items'
-							style={{ display: 'flex', marginTop: '10vh', justifyContent: 'center' }}
+							style={{ display: 'flex', marginTop: 20, justifyContent: 'center' }}
 						>
 							<ParentButton>
 								<Link
