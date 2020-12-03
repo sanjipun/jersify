@@ -8,7 +8,7 @@ const ListContacts = [
 		icon: 'fab fa-quora',
 	},
 	{
-		name: '9843807911 - Call Us',
+		name: '9843xxxxxx - Call Us',
 		icon: 'fas fa-phone-alt',
 	},
 ];
