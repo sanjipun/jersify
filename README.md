@@ -1,3 +1,3 @@
 Jersify
 
-Demo:sanjaypun-jsx.github.io/jersify
+Demo: https://www.sanjaypun-jsx.github.io/jersify
